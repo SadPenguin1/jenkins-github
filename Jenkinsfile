@@ -1,18 +1,11 @@
-
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Clone') {
             steps {
+               git 'https://github.com/SadPenguin1/jenkins-github.git'
             }
         }
-        stage('Test') {
-            steps {
-            }
-        }
-        stage('Deploy') {
-            steps {
-            }
-        } 
+
     }
 }
